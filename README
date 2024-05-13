@@ -11,7 +11,7 @@ python3 -m venv /folder/path/env
 
 run your virtual environment
 ```bash
-  python3 -v virtualenv env 
+  source env/bin/activate
 ```
 
 install the libraries

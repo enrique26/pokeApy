@@ -1,0 +1,56 @@
+# pokeApi
+Api using python fastApi consuming  https://pokeapi.co/ as a source data
+
+## Installation (using Python3)
+
+Create A virtual environment
+
+```bash
+python3 -m venv /folder/path/env
+```
+
+install the libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+## Configuration (.env file)
+
+create an .env file at root folder
+```
+export POKEURL_BASE=https://pokeapi.co/api/v2/
+
+# pokeapi endpoints
+export API_BERRIES=berry/
+
+#offset and limits
+export OFFSET_BERRIES=0
+export LIMIT_BERRIES=64
+
+```
+
+## Usage
+in the console/terminal start the Uvicorn server
+```
+fastapi dev src/main.py  
+```
+after run it you can test the api 
+
+in a browser
+```
+http://127.0.0.1:8000/allBerryStats
+```
+
+using curl
+curl -v http://127.0.0.1:8000/allBerryStats
+
+you cansee the docs from fastApi in the browser using
+```
+http://127.0.0.1:8000/docs
+```
+
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

@@ -9,6 +9,11 @@ Create A virtual environment
 python3 -m venv /folder/path/env
 ```
 
+run your virtual envireonment
+```bash
+  python3 -v virtualenv env 
+```
+
 install the libraries
 
 ```bash
